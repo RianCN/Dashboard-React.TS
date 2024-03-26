@@ -49,21 +49,16 @@ const GraficoVendas = ({ data }: { data: IVenda[] }) => {
         <Legend />
         <Line type="monotone" 
         dataKey="pago" 
-        stroke="#A36AF9" 
+        stroke="#4472CC" 
         strokeWidth={3} 
         />
         <Line
           type="monotone"
           dataKey="processando"
-          stroke="#FBCB21"
+          stroke="#2DB9D8"
           strokeWidth={3}
         />
-        <Line
-          type="monotone"
-          dataKey="falha"
-          stroke="#000000"
-          strokeWidth={3}
-        />
+        <Line type="monotone" dataKey="falha" stroke="#000" strokeWidth={3} />
       </LineChart>
     </ResponsiveContainer>
   );
